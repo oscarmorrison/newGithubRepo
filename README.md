@@ -23,7 +23,8 @@ You can do this by typing
 ```
 source .bash_profile
 ```
-now just clone repo git@github.com:oscarmorrison/newBitBucketRepo.git
+now just clone repo 
+    git clone https://github.com/oscarmorrison/newGithubRepo.git
 to your new scripts directory
 now you need to make executable
 ```
@@ -35,8 +36,8 @@ now edit newGit
 vim newGit
 ````
 and change 
-USERNAME = "YOURBITBUCKETUSERNAME"
-PASSWORD = "YOURBITBUCKETPASSWORD"
+USERNAME = "YOURGITHUBUSERNAME"
+PASSWORD = "YOURPERSONALACCESSTOKEN"
 to your bitbucket username and password
 
 When you are in a directory that you want to upload to bitbucket in a new repo
@@ -51,7 +52,3 @@ add files, commit, and push to origin (remote)
 
 
 Enjoy!
-
------------
-
-Forked from https://bitbucket.org/hannesr/fillbucket/overview
