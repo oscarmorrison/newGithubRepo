@@ -1,6 +1,6 @@
 #newGit
 is a way to create a new repo using the *github* curl api from the command line  
-if you would like to create bitbucket repo from CLI see: (bitbucketNewGit)[https://github.com/oscarmorrison/newBitBucketRepo]  
+if you would like to create bitbucket repo from CLI see: [bitbucketNewGit](https://github.com/oscarmorrison/newBitBucketRepo)  
 
 
 ## Instructions ##
