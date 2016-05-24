@@ -1,0 +1,20 @@
+#!/bin/sh
+# Makes a non git directory to a new private bitbucket repository with all files added to initial commit
+# Usage = enter your github username and token in the script
+# Can get a Personal Access token from https://github.com/settings/tokens
+USERNAME="YOURGITHUBUSERNAME"
+TOKEN="YOURPERSONALACCESSTOKEN"
+git init
+echo "...git init"
+git add -A .
+echo "...git add -A"
+git commit -m "Initial commit"
+echo "...creating new remote repo on bitbucket"
+echo "...with name ${PWD##*/}"
+# Change this private: true if you would like repos to be private by default
+curl -u "$USERNAME:$TOKEN" https://api.github.com/user/repos -d '{"name":"'${PWD##*/}'", "private":false}'
+echo "...adding new repo remote URL git@github.com:$USERNAME/${PWD##*/}.git"
+git remote add origin git@github.com:$USERNAME/${PWD##*/}.git
+echo "...git push -u origin --all"
+git push -u origin --all
+git push -u origin --tags
