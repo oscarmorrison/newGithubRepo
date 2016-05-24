@@ -1,4 +1,7 @@
-newGit is a way to create a new repo using the github curl api from the command line
+#newGit
+is a way to create a new repo using the *github* curl api from the command line  
+if you would like to create bitbucket repo from CLI see: (bitbucketNewGit)[https://github.com/oscarmorrison/newBitBucketRepo]  
+
 
 ## Instructions ##
 
@@ -24,7 +27,9 @@ You can do this by typing
 source .bash_profile
 ```
 now just clone repo 
-    git clone https://github.com/oscarmorrison/newGithubRepo.git
+```
+git clone https://github.com/oscarmorrison/newGithubRepo.git
+```
 to your new scripts directory
 now you need to make executable
 ```
