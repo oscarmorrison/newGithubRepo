@@ -40,10 +40,11 @@ now edit newGit
 ```
 vim newGit
 ````
-and change 
-USERNAME = "YOURGITHUBUSERNAME"
-PASSWORD = "YOURPERSONALACCESSTOKEN"
-to your bitbucket username and password
+and change  
+USERNAME = "YOURGITHUBUSERNAME"  
+PASSWORD = "YOURPERSONALACCESSTOKEN"  
+to your github username and personal token
+*Can get a Personal Access token from https://github.com/settings/tokens*
 
 When you are in a directory that you want to upload to bitbucket in a new repo
 just type 
