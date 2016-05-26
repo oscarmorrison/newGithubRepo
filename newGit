@@ -9,7 +9,7 @@ echo "...git init"
 git add -A .
 echo "...git add -A"
 git commit -m "Initial commit"
-echo "...creating new remote repo on bitbucket"
+echo "...creating new remote repo on GitHub"
 echo "...with name ${PWD##*/}"
 # Change this private: true if you would like repos to be private by default
 curl -u "$USERNAME:$TOKEN" https://api.github.com/user/repos -d '{"name":"'${PWD##*/}'", "private":false}'
